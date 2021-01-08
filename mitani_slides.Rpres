@@ -1,0 +1,78 @@
+Applying for the F31 - My experience
+========================================================
+author: Aya Mitani
+date: January 15, 2021
+width: 1440
+height: 900
+font-family: 'Helvetica'
+
+Timeline
+========================================================
+```{r, echo = FALSE}
+library(knitr)
+library(kableExtra)
+timeline1 <- data.frame(Year = c(2016, "", "", 2017, "", "", "", ""),
+                        Date = c("Nov", "Dec", "", "Jan-Mar", "", "Mar 31", "", "Apr 7"),
+                        Task = c("Formed mentoring team",
+                                 "Literature review",
+                                 "Began writing (started with Specific Aims)",
+                                 "Preliminary data analysis",
+                                 "Write, write, write",
+                                 "Submitted to Office of Sponsored Programs",
+                                 "Reference letters submitted through eRA commons",
+                                 "Submitted to NIH"))
+kable(timeline1) %>%
+  row_spec(1, background = 'linen') %>%
+  #row_spec(2:3, background = 'darkseagreen')  %>%
+  row_spec(4:5, background = 'linen')  %>%    
+  #row_spec(6:7, background = 'darkseagreen') %>%
+  row_spec(8, background = 'linen')
+
+```
+
+
+Timeline continued
+========================================================
+```{r, echo = FALSE}
+library(knitr)
+library(kableExtra)
+timeline2 <- data.frame(Year = c(2017, "", "", "", "", "", "", "", ""),
+                        Date = c("Jun 15", "Jun 19", "Jul 5", "Jul 11", "Aug 1", "Aug 15", "Aug 23", "Sep 12", "Sep 14"),
+                        Event = c("Scientifi Review Group (Study Section) met",
+                                 "Score posted",
+                                 "Summary Statements posted",
+                                 "Phone call with Program Officer",
+                                 "Received email that my application was selected for funding, pending Just in Time (JIT)",
+                                 "JIT link prepared",
+                                 "Submitted JIT through OSP",
+                                 "Received Notice of Award",
+                                 "Submitted Activation Notice through OSP"))
+kable(timeline2) %>%
+  row_spec(1, background = 'linen') %>%
+  #row_spec(2:3, background = 'darkseagreen')  %>%
+  row_spec(3, background = 'linen')  %>%    
+  #row_spec(6:7, background = 'darkseagreen') %>%
+  row_spec(5, background = 'linen') %>%
+  row_spec(7, background = 'linen') %>%
+  row_spec(9, background = 'linen') 
+  
+
+```
+
+
+
+
+
+Slide With Code
+========================================================
+
+```{r}
+summary(cars)
+```
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+plot(cars)
+```
